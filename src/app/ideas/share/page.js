@@ -1,11 +1,8 @@
 import ImagePicker from "@/components/ideas/image-picker";
 import classes from "./page.module.css";
+import { shareIdea } from "@/lib/actions";
 
 export default function ShareIdeaPage() {
-  async function shareIdea(formData) {
-    "use server";
-    const idea = {};
-  }
   return (
     <>
       <header className={classes.header}>
@@ -43,7 +40,7 @@ export default function ShareIdeaPage() {
               required
             ></textarea>
           </p>
-          <ImagePicker />
+          <ImagePicker label="Your image" name="image" />
           <p className={classes.actions}>
             <button type="submit">Share Idea</button>
           </p>
