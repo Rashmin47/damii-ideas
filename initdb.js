@@ -5,7 +5,7 @@ const dummyIdeas = [
   {
     title: "Community Solar Sharing",
     slug: "community-solar-sharing",
-    image: "/images/burger.jpg",
+    image: "/images/community-solar.png",
     summary:
       "A platform where households with solar panels can share excess energy with neighbors, reducing bills and promoting clean energy.",
     instructions: `
@@ -14,13 +14,13 @@ const dummyIdeas = [
       3. Excess energy is allocated to nearby households in need.
       4. Implement a reputation and credit system for fairness.
     `,
-    creator: "Anisha Shrestha",
-    creator_email: "anisha@example.com",
+    creator: "Anish Shrestha",
+    creator_email: "anish@example.com",
   },
   {
-    title: "Skill Swap Hub",
-    slug: "skill-swap-hub",
-    image: "/images/curry.jpg",
+    title: "Project Management Tool",
+    slug: "project-management-tool",
+    image: "/images/projectmanagementtool.png",
     summary:
       "A community where people trade skills—coding for guitar lessons, cooking for graphic design, and more—without money involved.",
     instructions: `
@@ -31,6 +31,21 @@ const dummyIdeas = [
     `,
     creator: "Rashmin Sharma",
     creator_email: "rashmin@example.com",
+  },
+  {
+    title: "Dami Ideas – The Platform Itself",
+    slug: "dami-ideas-platform",
+    image: "/images/damiideas.png",
+    summary:
+      "A collaborative platform to share, upvote, and refine ideas with guidance from like-minded people. Not just for tech—any idea is welcome.",
+    instructions: `
+      1. Post an idea with a summary and details.
+      2. Community members upvote/downvote and add pros & cons.
+      3. Reputation points reward valuable contributions.
+      4. Ideas evolve into projects through shared experience.
+    `,
+    creator: "Dami Ideas Team",
+    creator_email: "team@damiideas.com",
   },
   {
     title: "Neighborhood Compost Network",
@@ -46,21 +61,6 @@ const dummyIdeas = [
     `,
     creator: "Suman Karki",
     creator_email: "suman@example.com",
-  },
-  {
-    title: "Dami Ideas – The Platform Itself",
-    slug: "dami-ideas-platform",
-    image: "/images/pizza.jpg",
-    summary:
-      "A collaborative platform to share, upvote, and refine ideas with guidance from like-minded people. Not just for tech—any idea is welcome.",
-    instructions: `
-      1. Post an idea with a summary and details.
-      2. Community members upvote/downvote and add pros & cons.
-      3. Reputation points reward valuable contributions.
-      4. Ideas evolve into projects through shared experience.
-    `,
-    creator: "Dami Ideas Team",
-    creator_email: "team@damiideas.com",
   },
 ];
 

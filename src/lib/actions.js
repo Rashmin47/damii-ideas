@@ -1,5 +1,9 @@
 "use server";
-async function shareIdea(formData) {
+import { saveIdea } from "./ideas";
+
+import { redirect } from "next/navigation";
+
+export async function shareIdea(formData) {
   const idea = {
     title: formData.get("title"),
     summary: formData.get("summary"),
@@ -8,6 +12,6 @@ async function shareIdea(formData) {
     creator: formData.get("name"),
     creator_email: formData.get("email"),
   };
-
-  console.log(idea);
+  await saveIdea(idea);
+  redirect("/ideas");
 }
