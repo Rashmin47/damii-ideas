@@ -4,6 +4,10 @@ import Link from "next/link";
 import getIdeas from "../../lib/ideas";
 import { Suspense } from "react";
 import IdeasLoadingPage from "./loading-out";
+export const metadata = {
+  title: "All Ideas",
+  description: "Browse the interesting ideas shared by our vibrant community.",
+};
 
 async function Ideas() {
   const ideas = await getIdeas();

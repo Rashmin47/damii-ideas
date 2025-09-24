@@ -1,8 +1,12 @@
+"use client";
 import ImagePicker from "@/components/ideas/image-picker";
 import classes from "./page.module.css";
 import { shareIdea } from "@/lib/actions";
+import IdeasFormSubmit from "@/components/ideas/ideas-form-submit";
+import { useActionState } from "react";
 
 export default function ShareIdeaPage() {
+  const [state, formAction] = useActionState(shareIdea, { message: null });
   return (
     <>
       <header className={classes.header}>
@@ -12,7 +16,7 @@ export default function ShareIdeaPage() {
         <p>Or any other idea you feel needs sharing!</p>
       </header>
       <main className={classes.main}>
-        <form className={classes.form} action={shareIdea}>
+        <form className={classes.form} action={formAction}>
           <div className={classes.row}>
             <p>
               <label htmlFor="name">Your name</label>
@@ -41,8 +45,9 @@ export default function ShareIdeaPage() {
             ></textarea>
           </p>
           <ImagePicker label="Your image" name="image" />
+          {state.message && <p>{state.message}</p>}
           <p className={classes.actions}>
-            <button type="submit">Share Idea</button>
+            <IdeasFormSubmit />
           </p>
         </form>
       </main>

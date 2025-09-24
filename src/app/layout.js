@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Dami Ideas",
-  description: "Delicious meals, shared by a food-loving community.",
+  description: "Interesting Ideas, shared by a brainstorming community.",
 };
 
 export default function RootLayout({ children }) {

@@ -2,12 +2,23 @@ import classes from "./page.module.css";
 import Image from "next/image";
 import { getIdea } from "@/lib/ideas";
 import { notFound } from "next/navigation";
-export default function IdeaDetailsPage({ params }) {
+
+export async function generateMetadata({ params }) {
   const idea = getIdea(params.ideaSlug);
 
   if (!idea) {
     notFound();
   }
+
+  return {
+    title: idea.title,
+    description: idea.summary,
+  };
+}
+
+export default function IdeaDetailsPage({ params }) {
+  const idea = getIdea(params.ideaSlug);
+
   idea.instructions = idea.instructions.replace(/\n/g, "<br />");
 
   return (
