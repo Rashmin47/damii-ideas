@@ -1,4 +1,4 @@
-import classes from "@/app/page.module.css";
+import classes from "./page.module.css";
 import ImageSlideshow from "@/components/images/image-slideshow";
 import Link from "next/link";
 export default function Home() {
@@ -22,6 +22,7 @@ export default function Home() {
           <div className={classes.cta}>
             <Link href="/community">Join the Community </Link>
             <Link href="/ideas">Explore Ideas </Link>
+            <Link href="/blog">Read Blogs </Link>
           </div>
         </div>
       </header>

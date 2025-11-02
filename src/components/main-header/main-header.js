@@ -22,6 +22,9 @@ export default function MainHeader() {
             <li>
               <NavLink href="/community">Incubation Community</NavLink>
             </li>
+            <li>
+              <NavLink href="/blog">Read Blogs</NavLink>
+            </li>
           </ul>
         </nav>
       </header>

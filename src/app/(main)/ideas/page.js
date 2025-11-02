@@ -1,7 +1,7 @@
 import IdeasGrid from "@/components/ideas/ideas-grid";
 import classes from "./page.module.css";
 import Link from "next/link";
-import getIdeas from "../../lib/ideas";
+import getIdeas from "@/lib/ideas";
 import { Suspense } from "react";
 import IdeasLoadingPage from "./loading-out";
 export const metadata = {
