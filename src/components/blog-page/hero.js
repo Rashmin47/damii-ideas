@@ -11,7 +11,7 @@ export default function Hero() {
           height={300}
         />
       </div>
-      <h1>Hi, I'm Rashmin</h1>
+      <h1>Hi, I&apos;m Rashmin</h1>
       <p>I am a developer and I love coding.</p>
     </section>
   );
